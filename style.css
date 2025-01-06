@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px);
+	gap: 5px;
+	background-color: #444;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cell:hover {
+	background-color: #e0e0e0;
+}
+
+.cell.x::before {
+	content: "X";
+	color: #f44336;
+}
+
+.cell.o::before {
+	content: "O";
+	color: #2196f3;
+}
+.bot{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 30%;
+	top: 10%;
+	width: 6rem;
+	height: 2rem;
+	background-color: red;
+}
+.bot.on::before{
+	content: 'Bot On';
+}
+.bot.off::before{
+	content: 'Bot Off';
+}
