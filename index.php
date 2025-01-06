@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bot off"></div>
+  <div class="container">
+    <div class="board">
+      <div class="cell" id="1"></div>
+      <div class="cell" id="2"></div>
+      <div class="cell" id="3"></div>
+      <div class="cell" id="4"></div>
+      <div class="cell" id="5"></div>
+      <div class="cell" id="6"></div>
+      <div class="cell" id="7"></div>
+      <div class="cell" id="8"></div>
+      <div class="cell" id="9"></div>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
